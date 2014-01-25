@@ -1,5 +1,6 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<SurfaceView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/surfaceview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
@@ -15,28 +16,13 @@
          This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows.
     -->
+
      <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true" >
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@style/FullscreenTheme"
+         android:fitsSystemWindows="true" >
 
-	    <SurfaceView
-	        android:id="@+id/surfaceView1"
-	        android:layout_width="match_parent"
-	        android:layout_height="match_parent" />
-
-   
-
-	        <LinearLayout
-	            android:id="@+id/fullscreen_content_controls"
-	            style="?buttonBarStyle"
-	            android:layout_width="match_parent"
-	            android:layout_height="wrap_content"
-	            android:layout_gravity="bottom|center_horizontal"
-	            android:background="@color/black_overlay"
-	            android:orientation="horizontal"
-	            tools:ignore="UselessParent" >
-	        </LinearLayout>
     </FrameLayout>
 
-</FrameLayout>
+</SurfaceView>

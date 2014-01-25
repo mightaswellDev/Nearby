@@ -47,7 +47,7 @@ public class FullscreenActivity extends Activity {
 		setContentView(R.layout.activity_fullscreen);
 
 		
-		final View contentView = findViewById(R.id.surfaceView1);
+		final View contentView = findViewById(R.id.surfaceview);
 
 		// Set up an instance of SystemUiHider to control the system UI for
 		// this activity.
